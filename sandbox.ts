@@ -1,28 +1,52 @@
-//arrays
-let names = ['luigi', 'mario', 'yoshi'];
-//declare array w one type, can only have that one type
+// explicit types
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
+//init variable but don't give value, but require it to be a string
 
-names.push('toad');
+age = 30;
+
+isLoggedIn = true;
+
+// arrays
+
+let ninjas:string[] = [];
+
+ninjas.push('john');
 
 
-let numbers = [10, 20, 30, 40];
+// union types
 
-numbers.push(25);
+let mixed: (string|number|boolean)[] = [];
 
+mixed.push('hello');
+mixed.push(10);
+mixed.push(false);
 
-let mixed = ['ken', 4, 'chun-li', 8, 9];
+console.log(mixed);
 
-mixed.push('ryu');
-//objects
+let uid: string|number;
+uid = '123';
+uid = 123;
 
-let ninja = {
-    name: 'mario',
-    belt: 'black',
+// objects
+let ninjaOne: object;
+ninjaOne = {
+    name: 'yoshi',
     age: 30
 };
-//once we've defined object, can't add properties to it
 
-ninja.age = 40;
-ninja.name = 'ryu';
+ninjaOne = [];
 
-//if instantiating new object with same name, properties have to be the same as the original object
+let ninjaTwo: {
+    name: string,
+    age: number,
+    beltColor: string
+};
+
+ninjaTwo = {
+    name: 'mario',
+    age: 42,
+    beltColor: 'black'
+};
+
