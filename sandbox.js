@@ -1,32 +1,17 @@
-// explicit types
-var character;
-var age;
-var isLoggedIn;
-//init variable but don't give value, but require it to be a string
-age = 30;
-isLoggedIn = true;
-// arrays
-var ninjas = [];
-ninjas.push('john');
-// union types
+var age = 25;
+age = true;
+console.log(age);
+age = 'hello';
+console.log(age);
+age = { name: 'luigi' };
+console.log(age);
 var mixed = [];
-mixed.push('hello');
-mixed.push(10);
+mixed.push(5);
+mixed.push('mario');
 mixed.push(false);
 console.log(mixed);
-var uid;
-uid = '123';
-uid = 123;
-// objects
-var ninjaOne;
-ninjaOne = {
-    name: 'yoshi',
-    age: 30
-};
-ninjaOne = [];
-var ninjaTwo;
-ninjaTwo = {
-    name: 'mario',
-    age: 42,
-    beltColor: 'black'
-};
+var ninja;
+ninja = { name: 'yoshi', age: 25 };
+console.log(ninja);
+ninja = { name: 25, age: 'yoshi' };
+console.log(ninja);
