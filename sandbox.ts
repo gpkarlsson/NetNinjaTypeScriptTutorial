@@ -1,14 +1,28 @@
+//arrays
+let names = ['luigi', 'mario', 'yoshi'];
+//declare array w one type, can only have that one type
 
-let character = 'mario';
-let age = 30;
-let isBlackBelt = false;
+names.push('toad');
 
-age = 40;
 
-isBlackBelt = true;
+let numbers = [10, 20, 30, 40];
 
-const circ = (diameter: number) => {
-    return diameter * Math.PI;
+numbers.push(25);
+
+
+let mixed = ['ken', 4, 'chun-li', 8, 9];
+
+mixed.push('ryu');
+//objects
+
+let ninja = {
+    name: 'mario',
+    belt: 'black',
+    age: 30
 };
+//once we've defined object, can't add properties to it
 
-console.log(circ(40));
+ninja.age = 40;
+ninja.name = 'ryu';
+
+//if instantiating new object with same name, properties have to be the same as the original object
